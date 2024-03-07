@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "sneakerpunks_backend": {
+      "build": "npx azle sneakerpunks_backend",
+      "candid": "src/sneakerpunks_backend/sneakerpunks_backend.did",
+      "gzip": true,
+      "main": "src/sneakerpunks_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/sneakerpunks_backend/sneakerpunks_backend.wasm"
+    },
+    "sneakerpunks_frontend": {
+      "dependencies": [
+        "sneakerpunks_backend"
+      ],
+      "source": [
+        "src/sneakerpunks_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "sneakerpunks_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
