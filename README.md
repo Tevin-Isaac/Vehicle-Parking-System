@@ -1,10 +1,10 @@
 # sneakerpunks
-Sneakerpunks is an online Marketplace where users can purchase sneakers.
 
 
-Welcome to your new sneakerpunks project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+## Description
+Sneakerpunk is the platform where anyone can explore,purchase.list and sell sneakers.You can also have an Overview of all products by seeing who is the owner of the product,location of the product,Price of the Product,How many have sold and Image of the product.
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+
 
 To learn more before you start working with sneakerpunks, see the following documentation available online:
 
