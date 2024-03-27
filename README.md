@@ -1,4 +1,6 @@
 # sneakerpunks
+Sneakerpunks is an online Marketplace where users can purchase sneakers.
+
 
 Welcome to your new sneakerpunks project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
@@ -45,7 +47,6 @@ If you are making frontend changes, you can start a development server with
 npm start
 ```
 
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
 
 ### Note on frontend environment variables
 
