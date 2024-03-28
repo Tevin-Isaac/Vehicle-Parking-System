@@ -192,7 +192,7 @@ const Marketplace = Canister({
   // Function to get the top-selling products
   getTopSellers: query(
     [nat64], // Limit parameter
-    Result(Vec(Product: any), text),
+    Result(Vec(Product), text),
     async (limit) => {
       const products = Marketplace.products.entries();
       const sortedProducts = products.sort(
