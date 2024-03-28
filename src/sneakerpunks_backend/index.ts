@@ -64,7 +64,7 @@ const Marketplace = Canister({
               price: _price,
               sold
           };
-          Marketplace.products.insert(productId, product);
+          Marketplace.products.put(productId, product);
           Marketplace.productsLength += 1n;
           return Ok(productId);
       }
@@ -87,7 +87,7 @@ const Marketplace = Canister({
           product.image = _image;
           product.location = _location;
           product.price = _price;
-          Marketplace.products.insert(_id, product);
+          Marketplace.products.put(_id, product); // Use put instead of insert
           return Ok("Product edited successfully");
       }
   ),
@@ -111,13 +111,10 @@ const Marketplace = Canister({
 
   readProduct: query(
       [nat64],
-      Result(Product, text),
+      ?Product, // Directly return the Product struct
       async (_index) => {
           const productOpt = Marketplace.products.get(_index);
-          if ("None" in productOpt) {
-              return Err("Product not found");
-          }
-          return Ok(productOpt.Some);
+          return productOpt.Some;
       }
   ),
 
@@ -141,10 +138,10 @@ const Marketplace = Canister({
           const transferResult = await tokenContract.transferFrom(ic.caller(), product.owner, product.price);
           if (transferResult) {
               product.sold += 1n;
-              Marketplace.products.insert(_index, product);
+              Marketplace.products.put(_index, product); // Update product after successful transfer
               return Ok("Product bought successfully");
           } else {
-              return Err("Transfer failed");
+              return Err("Transfer failed: Please check the token contract or try again later.");
           }
       }
   ),
@@ -153,7 +150,7 @@ const Marketplace = Canister({
       [],
       nat64,
       async () => {
-          return Marketplace.productsLength;
+          return Marketplace.productsLength; // Consider storing productsLength as a separate stable variable
       }
   )
 });
