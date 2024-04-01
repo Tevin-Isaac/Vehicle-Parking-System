@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import "../styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
 import Head from 'next/head';
-import '../styles/globals.css';
 import type { AppProps } from "next/app";
 
 // Import the connectorsForWallets function to create a list of wallets to connect to. 
