@@ -141,7 +141,7 @@ export const list_collection = [
     },
     {
       id: 5,
-      title: 'Can i purchase using celo or cUSD',
+      title: 'Can i purchase using ICP ',
       desc: 'yes you definitely can through your preffered wallet',
     },
     {
