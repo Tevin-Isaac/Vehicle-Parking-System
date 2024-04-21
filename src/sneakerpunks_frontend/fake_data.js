@@ -121,33 +121,33 @@ export const list_collection = [
   export const list_FAQ = [
     {
       id: 1,
-      title: 'How to sell online.',
+      title: 'How to mint nft.',
       desc: 'simple just upload product give description and boom its done',
     },
     {
       id: 2,
-      title: 'How to pre order',
-      desc: 'if you want to preorder early then you can',
+      title: 'How to place bid',
+      desc: 'if you want to join the buying bid you can',
     },
     {
       id: 3,
-      title: 'How to get your product',
-      desc: 'once it is available we do deliveries to you',
+      title: 'How to sell nft',
+      desc: 'once it is available on marketplace you can find it',
     },
     {
       id: 4,
-      title: 'How to reach out to us',
-      desc: 'We are available on all platforms',
+      title: 'How to discover nft',
+      desc: 'its definitely on the market place',
     },
     {
       id: 5,
-      title: 'Can i purchase using ICP ',
-      desc: 'yes you definitely can through your preffered wallet',
+      title: 'Can i purchase using celo',
+      desc: 'yes you definitely can through your metamask wallet',
     },
     {
       id: 6,
-      title: 'Can I feature as a Designer?',
-      desc: 'If you claim ownership of the design you will be featured',
+      title: 'Is my art owned by me?',
+      desc: 'If you claim ownership of it then it will definitely be yours',
     },
   ];
   

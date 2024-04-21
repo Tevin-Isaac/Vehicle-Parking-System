@@ -4,20 +4,20 @@
 @tailwind utilities;
 
 .main_bg {
-  background: rgb(248, 248, 248);
+  background: rgb(231, 169, 0);
   background: linear-gradient(
     95deg,
-    rgb(70, 3, 83) 50%,
-    rgb(70, 3, 83) 50%
+    rgb(116, 55, 151) 0%,
+    rgb(157, 182, 13) 50%
   );
 }
 
 .btn_primary {
-  background: rgb(255, 230, 0);
+  background: rgb(241, 237, 0);
   background: linear-gradient(
     193deg,
-    rgb(11, 0, 26) 15%,
-    rgb(73, 16, 95) 89%
+    rgb(255, 92, 228) 15%,
+    rgb(29, 58, 28) 89%
   );
 }
 
@@ -29,12 +29,4 @@
       rgb(255, 97, 92) 15%,
       rgb(228, 134, 26) 89%
     );
-}
-
-table {
-  width:100%;
-}
-table, th, td {
-  border: 2px solid white;
-  border-radius: 10px;
 }
