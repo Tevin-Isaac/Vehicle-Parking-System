@@ -67,11 +67,11 @@ Otherwise, these changes won't be reflected in IDL's and won't work when called 
 `dfx deploy dfinity_js_backend && dfx generate dfinity_js_backend` 
 `dfx deploy dfinity_js_frontend`
 
-## Steps to Be able to succesfully Rent a Farm Section 
+## Steps to Be able to succesfully Rent a Vehicle Parking  
 After You Login using Internet Identity at the Top Right Dropdown we have a dropdown showing the Principal.
 This is needed so as to Transfer ICP to the wallet.Using the browser Incognito you could Login as different user.
 
-The Address intended to make a Rent Farm Section(Rent Action), Should follow this steps below to Transfer ICP :
+The Address intended to make a Rent Vehicle Parking(Rent Action), Should follow this steps below to Transfer ICP :
 
 Transfer ICP:
 `dfx ledger transfer <ADDRESS>  --memo 0 --icp 1000 --fee 0`
@@ -82,4 +82,4 @@ where:
  - `<ADDRESS>` is the address of the recipient. To get the address from the principal, you can use the helper function from the marketplace canister - `getAddressFromPrincipal(principal: Principal)`, it can be called via the Candid UI.
 
 
-After which the account wallet reflects the amount. From this point The Rent functionality passes archieving Transfer of tokens to the Farm Creator/Owner
+After which the account wallet reflects the amount. From this point The Rent functionality passes archieving Transfer of tokens to the Vehicle Owner
